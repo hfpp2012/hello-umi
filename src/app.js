@@ -4,6 +4,9 @@ export const dva = {
       e.preventDefault();
       console.error(e.message);
     },
+    onHmr() {
+      console.log('xxx');
+    }
   },
   plugins: [
     require('dva-logger')(),

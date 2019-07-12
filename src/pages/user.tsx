@@ -9,7 +9,7 @@ const User = dynamic({
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(() => <div className={styles.normal}>
-          <h1>Page user</h1>
+          <h1>Page user 1</h1>
           <button onClick={() => { router.goBack(); }}>go back</button>
           <p>I will render after 1s</p>
         </div>);
