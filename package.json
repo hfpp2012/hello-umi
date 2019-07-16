@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "umi dev",
+    "start": "FORK_TS_CHECKER=1 umi dev",
     "build": "umi build",
     "test": "umi test",
     "lint:es": "eslint --ext .js src mock tests",
@@ -9,6 +9,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@types/react-intl": "^2.3.18",
     "antd": "^3.19.8",
     "dva-logger": "^1.0.0",
     "react": "^16.8.6",
