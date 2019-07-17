@@ -2,6 +2,10 @@ import { IConfig } from 'umi-types';
 
 // ref: https://umijs.org/config/
 const config: IConfig = {
+  block: {
+    defaultGitUrl: 'https://github.com/ant-design/pro-blocks',
+    npmClient: 'cnpm', // 优先级低于 umi block add [block] --npm-client
+  },
   hash: true,
   treeShaking: true,
   plugins: [
